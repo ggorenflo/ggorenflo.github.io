@@ -25,14 +25,23 @@
 
 .App-nav {
   border-left: lightgray 2px solid;
-  height: 100vh;
+  height: inherit;
+  min-height: 100vh;
   background-color: #e3e3e3;
+}
+
+.profile-picture {
+  max-width: 90%;
 }
 
 .app-nav-overlay-icon {
   position: absolute;
   top: 2vh;
   right: 3vh;
+}
+
+.app-nav-section {
+  position: fixed;
 }
 
 #app-nav-overlay {

@@ -5,6 +5,7 @@ import About from './views/About';
 import Portfolio from './views/Portfolio';
 import UIkit from 'uikit';
 import Icons from 'uikit/dist/js/uikit-icons';
+import profilePic from './assets/profile.png';
 import './App.css';
 import 'uikit/dist/css/uikit.min.css';
 
@@ -36,7 +37,8 @@ class App extends Component {
           </div>
 
           <div id="app-nav-sidebar" className="uk-width-1-5 App-nav">
-            <div className="uk-section">
+            <div className="uk-section app-nav-section">
+              <img src={profilePic} alt="" className="profile-picture uk-margin-bottom"/>
               <ul className="uk-nav uk-nav-primary">
                 <li>
                   <NavLink activeStyle={this.activeNavlinkStyle} exact to="/">Home</NavLink>
@@ -55,13 +57,14 @@ class App extends Component {
           <span
             data-uk-icon="icon: menu; ratio: 2"
             className="app-nav-overlay-icon"
-            data-uk-toggle="target: #nav-offcanvas"></span>
+            data-uk-toggle="#nav-offcanvas"></span>
             
-          <div id="nav-offcanvas" data-uk-offcanvas="flip: true; mode: push">
+          <div id="nav-offcanvas" data-uk-offcanvas="flip: true; mode: push; overlay: true">
             <div className="uk-offcanvas-bar" style={{
               background: '#e3e3e3'
             }}>
-              <div className="uk-section">
+              <div className="uk-section app-nav-section">
+              <img src={profilePic} alt="" className="profile-picture uk-margin-bottom"/>
                 <ul className="uk-nav uk-nav-primary">
                   <li>
                     <NavLink
