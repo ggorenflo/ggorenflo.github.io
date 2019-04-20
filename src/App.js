@@ -30,9 +30,9 @@ class App extends Component {
         <div data-uk-grid className="uk-grid uk-child-width-expand">
           <div className="uk-section uk-section-default">
             <div className="uk-container uk-container-small">
-              <Route path="/" exact component={Home} />
-              <Route path="/about/" component={About} />
-              <Route path="/portfolio/" component={Portfolio} />
+              <Route path={`${process.env.PUBLIC_URL}/`} exact component={Home} />
+              <Route path={`${process.env.PUBLIC_URL}/about/`} component={About} />
+              <Route path={`${process.env.PUBLIC_URL}/portfolio/`} component={Portfolio} />
             </div>
           </div>
 
@@ -41,13 +41,13 @@ class App extends Component {
               <img src={profilePic} alt="" className="profile-picture uk-margin-bottom"/>
               <ul className="uk-nav uk-nav-primary">
                 <li>
-                  <NavLink activeStyle={this.activeNavlinkStyle} exact to="/">Home</NavLink>
+                  <NavLink activeStyle={this.activeNavlinkStyle} exact to={`${process.env.PUBLIC_URL}/`}>Home</NavLink>
                 </li>
                 <li>
-                  <NavLink activeStyle={this.activeNavlinkStyle} to="/about/">About</NavLink>
+                  <NavLink activeStyle={this.activeNavlinkStyle} to={`${process.env.PUBLIC_URL}/about/`}>About</NavLink>
                 </li>
                 <li>
-                  <NavLink activeStyle={this.activeNavlinkStyle} to="/portfolio/">Portfolio</NavLink>
+                  <NavLink activeStyle={this.activeNavlinkStyle} to={`${process.env.PUBLIC_URL}/portfolio/`}>Portfolio</NavLink>
                 </li>
               </ul>
             </div>
@@ -72,21 +72,21 @@ class App extends Component {
                       activeStyle={this.activeNavlinkStyle}
                       style={{color: '#999'}}
                       exact
-                      to="/">Home</NavLink>
+                      to={`${process.env.PUBLIC_URL}/`}>Home</NavLink>
                   </li>
                   <li>
                     <NavLink
                       onClick={this.closeNavOverlay}
                       activeStyle={this.activeNavlinkStyle}
                       style={{color: '#999'}}
-                      to="/about/">About</NavLink>
+                      to={`${process.env.PUBLIC_URL}/about/`}>About</NavLink>
                   </li>
                   <li>
                     <NavLink
                       onClick={this.closeNavOverlay}
                       activeStyle={this.activeNavlinkStyle}
                       style={{color: '#999'}}
-                      to="/portfolio/">Portfolio</NavLink>
+                      to={`${process.env.PUBLIC_URL}/portfolio/`}>Portfolio</NavLink>
                   </li>
                 </ul>
               </div>
