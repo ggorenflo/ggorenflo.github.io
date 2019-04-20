@@ -1,15 +1,15 @@
 {
-  "main.css": "/grace-website/static/css/main.b25aed5b.chunk.css",
-  "main.js": "/grace-website/static/js/main.e64e63ac.chunk.js",
-  "main.js.map": "/grace-website/static/js/main.e64e63ac.chunk.js.map",
-  "runtime~main.js": "/grace-website/static/js/runtime~main.62afcc1b.js",
-  "runtime~main.js.map": "/grace-website/static/js/runtime~main.62afcc1b.js.map",
-  "static/js/2.891a7289.chunk.js": "/grace-website/static/js/2.891a7289.chunk.js",
-  "static/js/2.891a7289.chunk.js.map": "/grace-website/static/js/2.891a7289.chunk.js.map",
-  "index.html": "/grace-website/index.html",
-  "precache-manifest.0f4fb0b353ec91bba3625b4aa10a90fd.js": "/grace-website/precache-manifest.0f4fb0b353ec91bba3625b4aa10a90fd.js",
-  "service-worker.js": "/grace-website/service-worker.js",
-  "static/css/main.b25aed5b.chunk.css.map": "/grace-website/static/css/main.b25aed5b.chunk.css.map",
-  "static/media/profile.png": "/grace-website/static/media/profile.b422198b.png",
-  "static/media/stories.csv": "/grace-website/static/media/stories.51f03170.csv"
+  "main.css": "/grace/static/css/main.b25aed5b.chunk.css",
+  "main.js": "/grace/static/js/main.8f403837.chunk.js",
+  "main.js.map": "/grace/static/js/main.8f403837.chunk.js.map",
+  "runtime~main.js": "/grace/static/js/runtime~main.204c4300.js",
+  "runtime~main.js.map": "/grace/static/js/runtime~main.204c4300.js.map",
+  "static/js/2.891a7289.chunk.js": "/grace/static/js/2.891a7289.chunk.js",
+  "static/js/2.891a7289.chunk.js.map": "/grace/static/js/2.891a7289.chunk.js.map",
+  "index.html": "/grace/index.html",
+  "precache-manifest.8fd150aed6a7db1c93b6cb200b6c4bd2.js": "/grace/precache-manifest.8fd150aed6a7db1c93b6cb200b6c4bd2.js",
+  "service-worker.js": "/grace/service-worker.js",
+  "static/css/main.b25aed5b.chunk.css.map": "/grace/static/css/main.b25aed5b.chunk.css.map",
+  "static/media/profile.png": "/grace/static/media/profile.b422198b.png",
+  "static/media/stories.csv": "/grace/static/media/stories.51f03170.csv"
 }
