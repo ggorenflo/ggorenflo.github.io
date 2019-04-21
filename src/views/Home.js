@@ -1,10 +1,22 @@
 import React, { Component } from 'react';
+import Helmet from 'react-helmet';
 import unlLogo from '../assets/unl-logo.png';
 
 export default class Home extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <style>
+            {`
+            @media(max-width: 600px) {
+              .home-card-badge {
+                position: static !important;
+              }
+            }
+            `}
+          </style>
+        </Helmet>
         <h1>Grace Gorenflo</h1>
         <div className="uk-section uk-section-muted">
           <div className="uk-container uk-grid uk-grid-medium uk-child-width-expand@s uk-text-center" data-uk-grid>
@@ -37,13 +49,13 @@ export default class Home extends Component {
         <h2>Experience</h2>
         <div className="uk-card uk-card-default uk-card-body uk-margin-bottom">
           <div className="uk-card-title">Daily Nebraskan</div>
-          <div className="uk-card-badge uk-label">Aug 2017 - Present</div>
+          <div className="uk-card-badge uk-label home-card-badge">Aug 2017 - Present</div>
           <h4>Staff Writer</h4>
           <p></p>
         </div>
         <div className="uk-card uk-card-default uk-card-body uk-margin-bottom">
           <div className="uk-card-title">Omaha World Herald</div>
-          <div className="uk-card-badge uk-label">Aug 2018 - Dec 2018</div>
+          <div className="home-card-badge uk-card-badge uk-label">Aug 2018 - Dec 2018</div>
           <h4>Reporting Fellow</h4>
           <p>Friday night breaking news reporter.</p>
         </div>
