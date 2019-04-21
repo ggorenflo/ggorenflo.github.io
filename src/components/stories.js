@@ -40,12 +40,12 @@ export default class Stories extends Component {
         {loading && 
           <div className="uk-spinner"></div>
         }
-        <div className="uk-child-width-1-2@m uk-grid-match" data-uk-grid="margin: true">
+        <div className="uk-child-width-1-2@m uk-grid-match" data-uk-grid>
           {!loading &&
             stories.map((e, i) => {
               return (
                 <div key={i}>
-                  <div className="uk-card uk-card-default uk-card-hover">
+                  <div className="uk-card uk-card-default uk-card-hover uk-margin">
                     <div className="uk-card-media-top">
                       <img src={e.imageUrl} alt="" />
                     </div>

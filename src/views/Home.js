@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import unlLogo from '../assets/unl-logo.png';
+import name from '../assets/name.png';
 
 export default class Home extends Component {
   render() {
@@ -17,7 +18,7 @@ export default class Home extends Component {
             `}
           </style>
         </Helmet>
-        <h1>Grace Gorenflo</h1>
+        <img src={name} alt="" className="uk-margin" />
         <div className="uk-section uk-section-muted">
           <div className="uk-container uk-grid uk-grid-medium uk-child-width-expand@s uk-text-center" data-uk-grid>
             <div>
