@@ -30,7 +30,7 @@ export default class Stories extends Component {
         {loading && 
           <div className="uk-spinner"></div>
         }
-        <div className="uk-child-width-1-2@m uk-grid-match" data-uk-grid>
+        <div className="uk-child-width-1-2@m" data-uk-grid>
           {!loading &&
             stories.map((e, i) => {
               return (
