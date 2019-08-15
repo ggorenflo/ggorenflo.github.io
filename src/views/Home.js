@@ -1,23 +1,41 @@
 import React, { Component } from 'react';
-import Helmet from 'react-helmet';
 import unlLogo from '../assets/unl-logo.png';
 import name from '../assets/name.png';
+import './Home.css';
 
 export default class Home extends Component {
+
+  experienceList = [
+    {
+      companyName: 'The Daily Nebraskan',
+      startDate: 'May 2019',
+      endDate: 'Present',
+      position: 'Assistant News Editor'
+    },
+    {
+      companyName: '435 Magazine',
+      startDate: 'Jun 2019',
+      endDate: 'Aug 2019',
+      position: 'Staff Writer'
+    },
+    {
+      companyName: 'The Daily Nebraskan',
+      startDate: 'Aug 2017',
+      endDate: 'May 2019',
+      position: 'Staff Writer'
+    },
+    {
+      companyName: 'The Omaha World-Herald',
+      startDate: 'Aug 2018',
+      endDate: 'Dec 2018',
+      position: 'Reporting Fellow',
+      description: 'Friday night breaking news reporter.'
+    }
+  ]
+
   render() {
     return (
       <div>
-        <Helmet>
-          <style>
-            {`
-            @media(max-width: 600px) {
-              .home-card-badge {
-                position: static !important;
-              }
-            }
-            `}
-          </style>
-        </Helmet>
         <img src={name} alt="" className="uk-margin" />
         <div className="uk-section uk-section-muted">
           <div className="uk-container uk-grid uk-grid-medium uk-child-width-expand@s uk-text-center" data-uk-grid>
@@ -48,18 +66,18 @@ export default class Home extends Component {
             </div>
         </div>
         <h2>Experience</h2>
-        <div className="uk-card uk-card-default uk-card-body uk-margin-bottom">
-          <div className="uk-card-title">Daily Nebraskan</div>
-          <div className="uk-card-badge uk-label home-card-badge">Aug 2017 - Present</div>
-          <h4>Staff Writer</h4>
-          <p></p>
-        </div>
-        <div className="uk-card uk-card-default uk-card-body uk-margin-bottom">
-          <div className="uk-card-title">Omaha World Herald</div>
-          <div className="home-card-badge uk-card-badge uk-label">Aug 2018 - Dec 2018</div>
-          <h4>Reporting Fellow</h4>
-          <p>Friday night breaking news reporter.</p>
-        </div>
+        {
+          this.experienceList.map((e, i) =>  {
+            return (
+              <div className="uk-card uk-card-default uk-card-body uk-margin-bottom" key={i}>
+                <div className="uk-card-title">{e.companyName}</div>
+                <div className="uk-card-badge uk-label home-card-badge">{e.startDate} - {e.endDate}</div>
+                <h4>{e.position}</h4>
+                <p>{e.description}</p>
+              </div>
+            );
+          })
+        }
       </div>
     );
   }

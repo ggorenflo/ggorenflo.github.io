@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Helmet from 'react-helmet';
 import { getStories } from '../services/story-service';
 
 export default class Stories extends Component {
@@ -28,15 +27,6 @@ export default class Stories extends Component {
   let { loading, stories } = this.state;
     return (
       <div>
-        <Helmet>
-          <style>
-            {`
-            .story-footer {
-
-            }
-            `}
-          </style>
-        </Helmet>
         {loading && 
           <div className="uk-spinner"></div>
         }
