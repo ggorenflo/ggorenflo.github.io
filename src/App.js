@@ -5,7 +5,7 @@ import Portfolio from './views/Portfolio';
 import Experience from './views/Experience';
 import UIkit from 'uikit';
 import Icons from 'uikit/dist/js/uikit-icons';
-import profilePic from './assets/profile.png';
+import profilePic from './assets/new-profile.png';
 import './App.css';
 import 'uikit/dist/css/uikit.min.css';
 
