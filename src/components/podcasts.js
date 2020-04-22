@@ -27,7 +27,6 @@ export default class Podcasts extends Component {
     let { loading, podcasts } = this.state;
     return (
       <div>
-        <p>You can find a full list of podcasts for the Daily Nebraskan <a href="https://soundcloud.com/daily-nebraskan">here</a>.</p>
         {loading &&
           <div className="uk-spinner"></div>
         }

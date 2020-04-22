@@ -13,6 +13,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.closeNavOverlay = this.closeNavOverlay.bind(this);
+    UIkit.use(Icons);
   }
 
   activeNavlinkStyle = {
@@ -24,7 +25,6 @@ class App extends Component {
   }
 
   render() {
-    UIkit.use(Icons);
     return (
       <Router>
         <div data-uk-grid className="uk-grid uk-child-width-expand">
@@ -34,14 +34,21 @@ class App extends Component {
               <Route path={`${process.env.PUBLIC_URL}/work-samples/`} component={Portfolio} />
               <Route path={`${process.env.PUBLIC_URL}/experience/`} component={Experience} />
               <hr />
-              <div className="uk-text-center">
-                <h3>CONTACT</h3>
+              <div className="uk-text-center uk-margin-top">
+                <h5>CONTACT</h5>
                 <div className="uk-flex-center uk-grid-small" data-uk-grid>
-                  <h4>ggorenflo21@gmail.com</h4>
-                  <h4>(913) 558-6195</h4>
+                  <h5>ggorenflo21@gmail.com</h5>
+                  <h5>(913) 558-6195</h5>
                   <div className="uk-width-1-1">
-                    <span uk-icon="icon: twitter; ratio: 1.5" className="uk-margin-small-right"></span>
-                    <span uk-icon="icon: linkedin; ratio: 1.5" className="uk-margin-small-left"></span>
+                    { /* eslint-disable-next-line */ }
+                    <a data-uk-icon="icon: twitter; ratio: 1.5"
+                      className="uk-margin-small-right uk-icon-link"
+                      href="https://twitter.com/gorenwiththeflo?lang=en"></a>
+                    { /* eslint-disable-next-line */ }
+                    <a
+                      data-uk-icon="icon: linkedin; ratio: 1.5"
+                      className="uk-margin-small-left uk-icon-link"
+                      href="https://www.linkedin.com/in/grace-gorenflo"></a>
                   </div>
                 </div>
               </div>
@@ -63,8 +70,10 @@ class App extends Component {
                   <NavLink activeStyle={this.activeNavlinkStyle} to={`${process.env.PUBLIC_URL}/work-samples/`}>Work Samples</NavLink>
                 </li>
                 <li>
-                  <a href="https://drive.google.com/uc?export=download&id=16mpIgqK5y2tKP3AUVrZ5XhbgxOTOUgjF">
-                    Resume
+                  <a
+                    data-uk-icon="icon: download; ratio: 1.2"
+                    href="https://drive.google.com/uc?export=download&id=16mpIgqK5y2tKP3AUVrZ5XhbgxOTOUgjF">
+                    Resume 
                   </a>
                 </li>
               </ul>
