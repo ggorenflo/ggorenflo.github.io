@@ -5,21 +5,21 @@ export default class Experience extends Component {
   experienceList = [
     {
       companyName: 'The Daily Nebraskan',
-      startDate: 'July 2020',
+      startDate: 'March 2020',
       endDate: 'Present',
-      position: 'Editor in Chief'
+      position: 'Editor-in-chief'
     },
     {
       companyName: 'The Daily Nebraskan',
       startDate: 'May 2019',
-      endDate: 'Present',
+      endDate: 'May 2020',
       position: 'Assistant News Editor'
     },
     {
       companyName: '435 Magazine',
       startDate: 'Jun 2019',
       endDate: 'Aug 2019',
-      position: 'Staff Writer'
+      position: 'News Writer'
     },
     {
       companyName: 'The Daily Nebraskan',

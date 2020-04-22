@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Stories from '../components/stories';
 import Podcasts from '../components/podcasts';
+import './Portfolio.css';
 
 export default class Portfolio extends Component {
   
