@@ -40,7 +40,7 @@ export default class Stories extends Component {
                       <img src={e.imageUrl} alt="" />
                     </div>
                     <div className="uk-card-body">
-                      <div className="uk-card-badge uk-label">{e.publishedBy}</div>
+                      <div className="uk-card-badge uk-label portfolio-card-badge">{e.publishedBy}</div>
                       <h3 className="uk-card-title">{e.title}</h3>
                       <p>{e.lead}</p>
                     </div>
