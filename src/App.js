@@ -116,6 +116,13 @@ class App extends Component {
                       style={{color: '#999'}}
                       to={`${process.env.PUBLIC_URL}/work-samples/`}>Work Samples</NavLink>
                   </li>
+                  <li>
+                    <a
+                      data-uk-icon="icon: download; ratio: 1.2"
+                      href="https://drive.google.com/uc?export=download&id=16mpIgqK5y2tKP3AUVrZ5XhbgxOTOUgjF">
+                      Resume 
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
