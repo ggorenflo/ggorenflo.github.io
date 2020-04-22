@@ -6,7 +6,7 @@ export default class Home extends Component {
       <div>
         <h1 className="uk-text-center">Grace Gorenflo</h1>
         <h2 className="uk-text-center">About Me</h2>
-        <div className="uk-width-large@m uk-align-center">
+        <div className="uk-width-large@m uk-align-center uk-text-justify">
           <p>Hi! I’m Grace Gorenflo. I am a journalism major at the University of Nebraska-Lincoln
             minoring in business and communication studies. I’m originally from a Kansas City suburb,
             but my heart also resides in Colorado where my parents live.
