@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/grace/static/css/main.c66c6dfd.chunk.css",
-    "main.js": "/grace/static/js/main.02822a1c.chunk.js",
-    "main.js.map": "/grace/static/js/main.02822a1c.chunk.js.map",
-    "runtime~main.js": "/grace/static/js/runtime~main.9e664ae7.js",
-    "runtime~main.js.map": "/grace/static/js/runtime~main.9e664ae7.js.map",
-    "static/js/2.68b0a82b.chunk.js": "/grace/static/js/2.68b0a82b.chunk.js",
-    "static/js/2.68b0a82b.chunk.js.map": "/grace/static/js/2.68b0a82b.chunk.js.map",
-    "index.html": "/grace/index.html",
-    "precache-manifest.7f2551939202a7b7d6534dc6f905d51b.js": "/grace/precache-manifest.7f2551939202a7b7d6534dc6f905d51b.js",
-    "service-worker.js": "/grace/service-worker.js",
-    "static/css/main.c66c6dfd.chunk.css.map": "/grace/static/css/main.c66c6dfd.chunk.css.map",
-    "static/media/new-profile.png": "/grace/static/media/new-profile.d3a6c9ef.png",
-    "static/media/podcasts.csv": "/grace/static/media/podcasts.4b7e28b3.csv",
-    "static/media/stories.csv": "/grace/static/media/stories.1e33a544.csv"
-  }
+    "main.css": "/static/css/main.84199e0a.chunk.css",
+    "main.js": "/static/js/main.7226c026.chunk.js",
+    "main.js.map": "/static/js/main.7226c026.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5e6230c3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5e6230c3.js.map",
+    "static/js/2.d4f703cf.chunk.js": "/static/js/2.d4f703cf.chunk.js",
+    "static/js/2.d4f703cf.chunk.js.map": "/static/js/2.d4f703cf.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.cdc4906436a0570a28e109e4dcf75ed6.js": "/precache-manifest.cdc4906436a0570a28e109e4dcf75ed6.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.84199e0a.chunk.css.map": "/static/css/main.84199e0a.chunk.css.map",
+    "static/js/2.d4f703cf.chunk.js.LICENSE.txt": "/static/js/2.d4f703cf.chunk.js.LICENSE.txt",
+    "static/js/main.7226c026.chunk.js.LICENSE.txt": "/static/js/main.7226c026.chunk.js.LICENSE.txt",
+    "static/media/new-profile.png": "/static/media/new-profile.d3a6c9ef.png",
+    "static/media/podcasts.csv": "/static/media/podcasts.4b7e28b3.csv",
+    "static/media/stories.csv": "/static/media/stories.1e33a544.csv"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5e6230c3.js",
+    "static/js/2.d4f703cf.chunk.js",
+    "static/css/main.84199e0a.chunk.css",
+    "static/js/main.7226c026.chunk.js"
+  ]
 }
