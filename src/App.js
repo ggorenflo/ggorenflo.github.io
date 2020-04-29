@@ -58,6 +58,8 @@ class App extends Component {
 
           <div id="app-nav-sidebar" className="uk-width-1-5 App-nav">
             <div className="uk-section app-nav-section">
+              <h1 class="uk-margin-remove-bottom">Grace</h1>
+              <h1 class="uk-margin-remove-top">Gorenflo</h1>
               <img src={profilePic} alt="" className="profile-picture uk-margin-bottom"/>
               <ul className="uk-nav uk-nav-primary">
                 <li>
@@ -87,16 +89,16 @@ class App extends Component {
             data-uk-toggle="#nav-offcanvas"></span>
             
           <div id="nav-offcanvas" data-uk-offcanvas="flip: true; mode: push; overlay: true">
-            <div className="uk-offcanvas-bar" style={{
-              background: '#e3e3e3'
-            }}>
-              <div className="uk-section app-nav-section">
+            <div className="uk-offcanvas-bar">
+              <div className="app-nav-section">
+              <h1 class="uk-margin-remove-bottom">Grace</h1>
+              <h1 class="uk-margin-remove-top">Gorenflo</h1>
               <img src={profilePic} alt="" className="profile-picture uk-margin-bottom"/>
                 <ul className="uk-nav uk-nav-primary">
                   <li>
                     <NavLink
                       onClick={this.closeNavOverlay}
-                      activeStyle={this.activeNavlinkStyle}
+                      activeStyle={{ color: 'white' }}
                       style={{color: '#999'}}
                       exact
                       to={`${process.env.PUBLIC_URL}/`}>Home</NavLink>
@@ -104,7 +106,7 @@ class App extends Component {
                   <li>
                     <NavLink
                       onClick={this.closeNavOverlay}
-                      activeStyle={this.activeNavlinkStyle}
+                      activeStyle={{ color: 'white' }}
                       style={{color: '#999'}}
                       exact
                       to={`${process.env.PUBLIC_URL}/experience/`}>Experience</NavLink>
@@ -112,7 +114,7 @@ class App extends Component {
                   <li>
                     <NavLink
                       onClick={this.closeNavOverlay}
-                      activeStyle={this.activeNavlinkStyle}
+                      activeStyle={{ color: 'white' }}
                       style={{color: '#999'}}
                       to={`${process.env.PUBLIC_URL}/work-samples/`}>Work Samples</NavLink>
                   </li>

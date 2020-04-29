@@ -4,8 +4,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <h1 className="uk-text-center">Grace Gorenflo</h1>
-        <h2 className="uk-text-center">About Me</h2>
+        <h1 className="uk-text-center">About Me</h1>
         <div className="uk-width-large@m uk-align-center uk-text-justify">
           <p>Hi! I’m Grace Gorenflo. I am a journalism major at the University of Nebraska-Lincoln
             minoring in business and communication studies. I’m originally from a Kansas City suburb,

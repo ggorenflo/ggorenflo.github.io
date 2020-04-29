@@ -39,7 +39,7 @@ export default class Experience extends Component {
   render() {
     return (
       <div>
-        <h2>Experience</h2>
+        <h1>Experience</h1>
         {
           this.experienceList.map((e, i) =>  {
             return (
