@@ -44,9 +44,9 @@ export default class Experience extends Component {
           this.experienceList.map((e, i) =>  {
             return (
               <div className="uk-card uk-card-default uk-card-body uk-margin-bottom" key={i}>
-              <div className="uk-card-title">{e.companyName}</div>
+              <div className="uk-card-title">{e.position}</div>
               <div className="uk-card-badge uk-label home-card-badge">{e.startDate} - {e.endDate}</div>
-              <h4>{e.position}</h4>
+              <h4>{e.companyName}</h4>
               <p>{e.description}</p>
               </div>
             );
