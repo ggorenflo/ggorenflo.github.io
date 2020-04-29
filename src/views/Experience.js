@@ -19,13 +19,13 @@ export default class Experience extends Component {
       companyName: '435 Magazine',
       startDate: 'Jun 2019',
       endDate: 'Aug 2019',
-      position: 'News Writer'
+      position: 'Staff Writer'
     },
     {
       companyName: 'The Daily Nebraskan',
       startDate: 'Aug 2017',
       endDate: 'May 2019',
-      position: 'Staff Writer'
+      position: 'News Writer'
     },
     {
       companyName: 'The Omaha World-Herald',
